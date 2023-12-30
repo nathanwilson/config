@@ -4,6 +4,12 @@ return {
     config = function ()
         local telescope = require("telescope")
 
-    telescope.load_extension("file_browser") 
+        telescope.load_extension("file_browser")
+
+
+        -- set keymaps
+        local keymap = vim.keymap -- for conciseness
+
+	keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<cr>", { desc = "Browse files" })
     end
 }
