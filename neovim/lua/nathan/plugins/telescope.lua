@@ -13,6 +13,13 @@ return {
 
 	telescope.load_extension("fzf")
 
+        local wk = require("which-key")
+        wk.register({
+          ["<leader>f"] = {
+	      name = "+file",
+          },
+        })
+
         -- set keymaps
         local keymap = vim.keymap -- for conciseness
 
