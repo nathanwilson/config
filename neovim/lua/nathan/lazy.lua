@@ -11,5 +11,5 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "nathan.plugins" } })
+require("lazy").setup({ { import = "nathan.plugins" }, { import = "nathan.plugins.lsp" } })
 
