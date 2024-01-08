@@ -8,6 +8,8 @@ Nathan's configuration files
 # arch linux
 pacman -S neovim nodejs node <todo more - fzf?>
 
+# macos
+brew install ripgrep
 ```
 
 - Setup
