@@ -63,11 +63,9 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "rustfmt",
         "cfn-lint",
         "eslint_d",
         "prettier",
-        "tflint",
         "stylua",
       },
     })
