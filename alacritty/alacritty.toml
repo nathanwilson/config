@@ -1,0 +1,11 @@
+[shell]
+program = "/bin/zsh"
+args = [
+  "-l",
+  "-c",
+  "zellij attach --index 0 || zellij"
+]
+
+[window]
+option_as_alt = "OnlyLeft"
+startup_mode = "Maximized"
