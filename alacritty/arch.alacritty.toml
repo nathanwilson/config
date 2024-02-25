@@ -1,0 +1,10 @@
+[shell]
+program = "bash"
+args = [
+  "-l",
+  "-c",
+  "zellij attach --index 0 || zellij"
+]
+
+[window]
+startup_mode = "Maximized"

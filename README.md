@@ -1,6 +1,19 @@
 # Config
 Nathan's configuration files
 
+## Alacritty
+### Arch
+```shell
+mkdir -p ~/.config/alacritty
+ln -s $(pwd)/alacritty/arch.alacritty.toml ~/.config/alacritty/alacritty.toml
+```
+
+### MacOS
+```shell
+mkdir -p ~/.config/alacritty
+ln -s $(pwd)/alacritty/macos.alacritty.toml ~/.config/alacritty/alacritty.toml
+```
+
 ## NeoVim
 
 - Dependencies
