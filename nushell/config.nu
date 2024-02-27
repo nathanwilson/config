@@ -845,3 +845,5 @@ use ~/.cache/starship/init.nu
 # alias helix to hx #
 alias hx = helix
 
+# use atuin #
+source ~/.local/share/atuin/init.nu
