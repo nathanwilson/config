@@ -1,9 +1,12 @@
 [shell]
-program = "bash"
+program = "zellij"
 args = [
-  "-l",
-  "-c",
-  "zellij attach --index 0 || zellij"
+  "options",
+  "--default-shell",
+  "nu"
+  # "-l",
+  # "-c",
+  # "zellij attach --index 0 || zellij"
 ]
 
 [window]
