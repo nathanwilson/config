@@ -838,3 +838,10 @@ $env.config = {
         }
     ]
 }
+
+# use starship.rs #
+use ~/.cache/starship/init.nu
+
+# alias helix to hx #
+alias hx = helix
+
