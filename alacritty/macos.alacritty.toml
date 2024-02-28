@@ -11,6 +11,7 @@ option_as_alt = "OnlyLeft"
 startup_mode = "Maximized"
 
 [font]
+size = 15
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 bold = { style = "Bold" }
 italic = { style = "Italic" }
