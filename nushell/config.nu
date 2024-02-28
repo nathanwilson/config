@@ -839,6 +839,10 @@ $env.config = {
     ]
 }
 
+$env.config = {
+    show_banner: false,
+}
+
 # use starship.rs #
 use ~/.cache/starship/init.nu
 
