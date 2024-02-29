@@ -846,12 +846,5 @@ $env.config = {
 # use starship.rs #
 use ~/.cache/starship/init.nu
 
-if (sys | get host.name) == 'Darwin' {
-    # alias helix to hx #
-    alias hx = helix
-}
-
 # use atuin #
 source ~/.local/share/atuin/init.nu
-
-
