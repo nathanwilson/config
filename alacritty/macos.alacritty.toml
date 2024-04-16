@@ -7,6 +7,9 @@
 # ]
 program = "/opt/homebrew/bin/zellij"
 args = [
+  "attach",
+  "--create",
+  "general",
   "options",
   "--default-shell",
   "/opt/homebrew/bin/nu"

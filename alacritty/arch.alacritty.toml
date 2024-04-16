@@ -1,6 +1,9 @@
 [shell]
 program = "zellij"
 args = [
+  "attach",
+  "--create",
+  "general",
   "options",
   "--default-shell",
   "nu"
