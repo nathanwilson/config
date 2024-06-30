@@ -7,9 +7,9 @@
 {
   imports = [ # Include the results of the hardware scan.
     # With commit: a59f00f5ac65b19382617ba00f360f8bc07ed3ac
-    "${
-      builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; }
-    }/framework/13-inch/7040-amd"
+    # "${
+    #   builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; }
+    # }/framework/13-inch/7040-amd"
     ./hardware-configuration.nix
   ];
 
