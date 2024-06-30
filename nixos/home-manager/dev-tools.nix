@@ -5,6 +5,7 @@
     enable = true;
     userName = "Nathan Wilson";
     userEmail = "github.wound@nordac.simplelogin.com";
+    extraConfig = { core = { editor = "hx"; }; };
   };
   programs.nushell = {
     enable = true;

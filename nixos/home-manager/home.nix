@@ -67,7 +67,10 @@
   #
   #  /etc/profiles/per-user/nathan/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = { EDITOR = "hx"; };
+  home.sessionVariables = {
+    EDITOR = "hx";
+    GIT_EDITOR = "hx";
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
