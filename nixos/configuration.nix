@@ -5,16 +5,19 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-51db476f-1c41-4831-b5c1-352e13601192".device = "/dev/disk/by-uuid/51db476f-1c41-4831-b5c1-352e13601192";
+  # Enable bios updates via fwupd.
+  services.fwupd.enable = true;
+
+  boot.initrd.luks.devices."luks-51db476f-1c41-4831-b5c1-352e13601192".device =
+    "/dev/disk/by-uuid/51db476f-1c41-4831-b5c1-352e13601192";
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -74,9 +77,7 @@
         FastConnectable = "true";
         Experimental = "true";
       };
-      Policy = {
-        AutoEnable = "true";
-      };
+      Policy = { AutoEnable = "true"; };
     };
   };
 
@@ -104,10 +105,11 @@
     isNormalUser = true;
     description = "Nathan Wilson";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
-    ];
+    packages = with pkgs;
+      [
+        kdePackages.kate
+        #  thunderbird
+      ];
   };
 
   # Install firefox.
@@ -123,11 +125,12 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-    pkgs.home-manager
-  ];
+  environment.systemPackages = with pkgs;
+    [
+      #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+      #  wget
+      pkgs.home-manager
+    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
