@@ -14,7 +14,6 @@
           show_banner: false,
       }
       use ~/.cache/starship/init.nu
-      source ~/.cache/atuin/init.nu
     '';
   };
   programs.starship = {
