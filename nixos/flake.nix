@@ -22,6 +22,8 @@
     in {
       # NixOS configuration entrypoint
       # Available through 'nixos-rebuild --flake .#nixos'
+      # packages.x86_64-linux.default =
+      #   inputs.fenix.packages.x86_64-linux.default.toolchain;
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
