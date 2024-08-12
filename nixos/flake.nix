@@ -31,7 +31,10 @@
         nixos = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           # > Our main nixos configuration file <
-          modules = [ ./nixos/configuration.nix ./nixos/rust.nix ];
+          modules = [
+            ./nixos/configuration.nix
+            # ./nixos/rust.nix
+          ];
         };
       };
 
