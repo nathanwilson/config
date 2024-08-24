@@ -36,8 +36,16 @@
     settings = {
       shell = {
         program = "zellij";
-        args =
-          [ "attach" "--create" "general" "options" "--default-shell" "nu" ];
+        args = [
+          "attach"
+          "--create"
+          "general"
+          "options"
+          "--default-shell"
+          "nu"
+          "--default-cwd"
+          "/home/nathan"
+        ];
       };
       window.startup_mode = "Maximized";
     };
