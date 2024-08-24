@@ -1,6 +1,30 @@
 # Config
 Nathan's configuration files
 
+## Pacdef
+### Arch
+```shell
+pacdef group import $(pwd)/pacdef
+pacdef package sync
+```
+
+
+## NuShell
+### Arch
+```shell
+mkdir -p ~/.config/nushell
+ln -s $(pwd)/nushell/config.nu ~/.config/nushell/config.nu
+ln -s $(pwd)/nushell/env.nu ~/.config/nushell/env.nu
+```
+
+## Helix
+### Arch
+```shell
+mkdir -p ~/.config/helix
+ln -s $(pwd)/helix/languages.toml ~/.config/helix/languages.toml
+ln -s $(pwd)/helix/config.toml ~/.config/helix/config.toml
+```
+
 ## Alacritty
 ### Arch
 ```shell
