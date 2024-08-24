@@ -925,3 +925,4 @@ alias upside-auth-prod-creds = prod-creds
 
 alias upside-iam-dev = upside-iam --env development
 alias upside-iam-prod = upside-iam --env production
+alias hx = helix
