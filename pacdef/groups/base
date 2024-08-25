@@ -1,13 +1,21 @@
 [arch]
-firefox
+
+# terminal
 alacritty
+atuin
 nushell
 starship
 zellij
-atuin
-git
+
+# packages
 topgrade-bin
 pacdef-bin
+paru
+paru-debug
+
+# misc
+firefox
 spotify-player
 transmission-qt
 proton-vpn-gtk-app
+egpu-switcher-bin
