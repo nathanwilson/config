@@ -3,6 +3,8 @@ amd-ucode
 ark
 base
 base-devel
+bluez
+bluez-utils
 dolphin
 efibootmgr
 gst-plugin-pipewire
@@ -14,6 +16,7 @@ libpulse
 libva-mesa-driver
 linux
 linux-firmware
+linux-headers
 linux-lts
 nano
 network-manager-applet
