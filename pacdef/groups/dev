@@ -3,3 +3,24 @@ git
 helix
 less
 rustup
+
+# ESP-32 Stuff
+clang
+
+[rust]
+cargo-update
+
+# ESP-32 Stuff
+ldproxy
+espflash
+cargo-espflash
+
+[rustup]
+toolchain/nightly
+component/nightly/cargo
+component/nightly/clippy
+component/nightly/rust-docs
+component/nightly/rust-src
+component/nightly/rust-std
+component/nightly/rustc
+component/nightly/rustfmt
