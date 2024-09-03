@@ -2,10 +2,14 @@
 git
 helix
 less
+opentofu
 rustup
 
 # ESP-32 Stuff
 clang
+
+# PD Calendar Lambda
+zig
 
 [rust]
 cargo-update
@@ -14,6 +18,9 @@ cargo-update
 ldproxy
 espflash
 cargo-espflash
+
+# PD Calendar Lambda
+cargo-lambda
 
 [rustup]
 toolchain/nightly
