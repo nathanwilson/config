@@ -1,4 +1,4 @@
-[shell]
+[terminal.shell]
 program = "zellij"
 args = [
   # "attach",
@@ -14,3 +14,5 @@ args = [
 
 [window]
 startup_mode = "Maximized"
+
+[terminal]
