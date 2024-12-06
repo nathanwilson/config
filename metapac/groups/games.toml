@@ -1,0 +1,7 @@
+arch = [
+  { package = "steam" },
+  { package = "discord" },
+  { package = "nvidia" },
+  { package = "xpadneo-dkms" },
+  { package = "emudeck" },
+]

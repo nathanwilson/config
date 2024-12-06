@@ -1,11 +1,11 @@
 # Config
 Nathan's configuration files
 
-## Pacdef
+## Metapac
 ### Arch
 ```shell
-pacdef group import $(pwd)/pacdef
-pacdef package sync
+ln -s $(pwd)/metapac ~/.config/metapac
+metapac s
 ```
 
 

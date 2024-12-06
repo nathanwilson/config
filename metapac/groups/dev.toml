@@ -1,0 +1,33 @@
+arch = [
+  { package = "aws-cli-v2" },
+  { package = "git" },
+  { package = "helix" },
+  { package = "less" },
+  { package = "opentofu" },
+  { package = "rustup" },
+
+  # ESP-32 Stuff
+  { package = "clang" },
+
+  # PD Calendar Lambda
+  { package = "zig" },
+]
+
+cargo = [
+  { package = "cargo-update" },
+
+  # ESP-32 Stuff
+  { package = "ldproxy" },
+  { package = "espflash" },
+  { package = "cargo-espflash" },
+  { package = "cargo-generate" },
+
+  # PD Calendar Lambda
+  { package = "cargo-lambda" },
+]
+
+rustup = [
+  { package = "nightly-2024-11-07-x86_64-unknown-linux-gnu" }, # this is specifically used for ESP-32 Stuff. Later versions broke that. Try getting rid of this eventually
+  { package = "nightly-x86_64-unknown-linux-gnu" },
+  { package = "stable-x86_64-unknown-linux-gnu" },
+]

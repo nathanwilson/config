@@ -16,3 +16,6 @@ name = "yaml"
 formatter = { command = "prettier", args = [ "--parser", "yaml" ] }
 file-types = ["yaml", "yml", "cfn"]
 auto-format = true
+
+[[language]]
+name = "rust"
