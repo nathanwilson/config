@@ -11,6 +11,9 @@ arch = [
 
   # PD Calendar Lambda
   { package = "zig" },
+
+  # LSPs
+  { package = "taplo-cli" } # TOML
 ]
 
 cargo = [
