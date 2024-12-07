@@ -906,6 +906,9 @@ if not (which fnm | is-empty) {
   $env.PATH = ($path | prepend [ $node_path ])
 }
 
+let helix_alias = if ((sys host | get hostname) == "framework") { "helix" } else { "hx" }
+alias hx = ^$helix_alias
+
 alias upside-auth-dev = upside-auth --env development
 alias upside-auth-prod = upside-auth --env production
 
@@ -924,6 +927,3 @@ alias upside-auth-prod-creds = prod-creds
 
 alias upside-iam-dev = upside-iam --env development
 alias upside-iam-prod = upside-iam --env production
-if ((sys host | get name) != "Darwin") {
-    alias hx = helix
-}
