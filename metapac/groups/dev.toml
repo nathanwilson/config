@@ -13,7 +13,7 @@ arch = [
   { package = "zig" },
 
   # LSPs
-  { package = "taplo-cli" } # TOML
+  { package = "taplo-cli" }, # TOML
 ]
 
 cargo = [

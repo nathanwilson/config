@@ -19,4 +19,3 @@ arch = [
   { package = "egpu-switcher-bin" },
   { package = "unzip" },
 ]
-

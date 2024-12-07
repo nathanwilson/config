@@ -19,3 +19,7 @@ auto-format = true
 
 [[language]]
 name = "rust"
+
+[[language]]
+name = "toml"
+auto-format = true
