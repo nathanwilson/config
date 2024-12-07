@@ -1,4 +1,4 @@
-[shell]
+[terminal.shell]
 # program = "/bin/zsh"
 # args = [
 #   "-l",
@@ -25,3 +25,5 @@ normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 bold = { style = "Bold" }
 italic = { style = "Italic" }
 bold_italic = { style = "Bold Italic" }
+
+[terminal]
