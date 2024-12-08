@@ -13,9 +13,11 @@ arch = [
 
   # misc
   { package = "firefox" },
-  { package = "spotify-player" },
+  # { package = "spotify-player" },
   { package = "transmission-qt" },
   { package = "proton-vpn-gtk-app" },
   { package = "egpu-switcher-bin" },
   { package = "unzip" },
 ]
+
+cargo = [{ package = "spotify_player" }]

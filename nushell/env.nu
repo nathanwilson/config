@@ -97,10 +97,12 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
-# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
 if (sys host | get name) == 'Darwin' {
   $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin' | prepend '/Users/nathan/.cargo/bin' | prepend '/Users/nathan/.pyenv/shims' )
+}
+
+if (sys host | get name) == 'Arch Linux' {
+  $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/nathan/.cargo/bin')
 }
 
 # # start ssh-agent if it isn't already running
