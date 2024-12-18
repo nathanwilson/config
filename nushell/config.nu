@@ -927,3 +927,7 @@ alias upside-auth-prod-creds = prod-creds
 
 alias upside-iam-dev = upside-iam --env development
 alias upside-iam-prod = upside-iam --env production
+
+alias kfab = kf-aws-access-broker
+alias kfabra = kf-aws-access-broker request-access
+alias kfabrr = kf-aws-access-broker review-request
