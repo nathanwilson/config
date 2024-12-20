@@ -2,6 +2,7 @@ arch = [
   { package = "aws-cli-v2" },
   { package = "git" },
   { package = "helix" },
+  { package = "jujutsu" },
   { package = "less" },
   { package = "opentofu" },
   { package = "rustup" },
@@ -27,6 +28,8 @@ cargo = [
 
   # PD Calendar Lambda
   { package = "cargo-lambda" },
+
+  { package = "rustlings" },
 ]
 
 rustup = [
