@@ -30,6 +30,7 @@ brew = [
     "helix",
     "icu4c@76",
     "influxdb",
+    "jj",
     "jq",
     "k6",
     "k9s",
