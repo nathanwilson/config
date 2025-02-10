@@ -215,8 +215,8 @@ $env.config = {
     }
 
     filesize: {
-        metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
-        format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
+        unit: metric
+        precision: 1
     }
 
     cursor_shape: {
@@ -884,7 +884,7 @@ export-env {
               condition: {|before, after| [.nvmrc .node-version] | path exists | any { |it| $it }}
 	      code: {|before, after|
                 if ('FNM_DIR' in $env) {
-	          fnm use # Personally I prefer to use fnm --log-level=quiet use 
+	          fnm use # Personally I prefer to use fnm --log-level=quiet use
 		}
 	      }
 	  }]
@@ -917,10 +917,10 @@ alias upside-auth-prod-login = upside-auth-prod login --email nathan.wilson@upsi
 
 def dev-creds [] {
     $env.UPSIDE_ACCESS_TOKEN = (upside-auth-dev token)
-} 
+}
 def prod-creds [] {
     $env.UPSIDE_ACCESS_TOKEN = (upside-auth-dev token)
-} 
+}
 
 alias upside-auth-dev-creds = dev-creds
 alias upside-auth-prod-creds = prod-creds
