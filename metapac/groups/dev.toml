@@ -3,6 +3,7 @@ arch = [
   { package = "git" },
   { package = "helix" },
   { package = "jujutsu" },
+  { package = "libgit2" },
   { package = "less" },
   { package = "opentofu" },
   { package = "rustup" },

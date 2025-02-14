@@ -3,5 +3,5 @@ arch = [
   { package = "discord" },
   { package = "nvidia" },
   { package = "xpadneo-dkms" },
-  { package = "emudeck" },
+  { package = "clonehero" },
 ]

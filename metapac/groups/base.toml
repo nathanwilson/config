@@ -18,6 +18,8 @@ arch = [
   { package = "proton-vpn-gtk-app" },
   { package = "egpu-switcher-bin" },
   { package = "unzip" },
+  { package = "unrar" },
+  { package = "mp3tag" },
 ]
 
 cargo = [{ package = "spotify_player" }]
