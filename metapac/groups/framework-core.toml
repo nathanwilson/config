@@ -1,0 +1,5 @@
+arch = [
+  { package = "transmission-qt" },
+  { package = "proton-vpn-gtk-app" },
+  { package = "egpu-switcher-bin" },
+]
