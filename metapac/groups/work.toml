@@ -19,6 +19,9 @@ brew = [
   "taplo",
   "typescript-language-server",
   "yaml-language-server",
+
+  # personal
+  "proton-pass",
 ]
 pipx = ["upside-scaffolding-cli"]
 cargo = ["metapac"]
