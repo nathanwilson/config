@@ -1,19 +1,19 @@
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server", "eslint" ]
-formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+language-servers = ["typescript-language-server", "eslint"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "json"
 # language-servers = [ "vscode-json-language-server" ]
-formatter = { command = "prettier", args = [ "--parser", "json" ] }
+formatter = { command = "prettier", args = ["--parser", "json"] }
 auto-format = true
 
 [[language]]
 name = "yaml"
 # language-servers = [ "vscode-json-language-server" ]
-formatter = { command = "prettier", args = [ "--parser", "yaml" ] }
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
 file-types = ["yaml", "yml", "cfn"]
 auto-format = true
 
@@ -22,4 +22,5 @@ name = "rust"
 
 [[language]]
 name = "toml"
+language-servers = ["taplo"]
 auto-format = true

@@ -8,6 +8,12 @@ ln -s $(pwd)/metapac ~/.config/metapac
 metapac s
 ```
 
+### MacOS
+```shell
+ln -s $(pwd)/metapac "/Users/nathan.wilson/Library/Application Support/metapac"
+metapac s
+```
+
 
 ## NuShell
 ### Arch

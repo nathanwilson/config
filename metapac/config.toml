@@ -4,4 +4,5 @@ hostname_groups_enabled = true
 
 [hostname_groups]
 framework = ["framework-sys", "framework-app", "base", "dev", "games"]
-OCTO-MAC-FVFDR2L1Q05N = ["work"]
+OCTO-MAC-FVFDR2L1Q05N = ["work-old"]
+KT-MAC-MWN4NG90K2 = ["work"]

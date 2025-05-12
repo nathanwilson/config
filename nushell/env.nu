@@ -98,7 +98,7 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 if (sys host | get name) == 'Darwin' {
-  $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin' | prepend '/Users/nathan/.cargo/bin' | prepend '/Users/nathan/.pyenv/shims' )
+  $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin' | prepend '/Users/nathan.wilson/.cargo/bin' | prepend '/Users/nathan.wilson/.pyenv/shims' | prepend '/Users/nathan.wilson/.local/bin' )
 }
 
 if (sys host | get name) == 'Arch Linux' {
