@@ -2,6 +2,8 @@ brew = [
   "alacritty",
   "atuin",
   "awscli",
+  "firefox",
+  "firefox@developer-edition",
   "fnm",
   "font-hack-nerd-font",
   "helix",
