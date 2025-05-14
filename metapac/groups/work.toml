@@ -26,4 +26,4 @@ brew = [
   "proton-pass",
 ]
 pipx = ["upside-scaffolding-cli"]
-cargo = ["metapac"]
+cargo = ["cargo-update", "metapac"]
