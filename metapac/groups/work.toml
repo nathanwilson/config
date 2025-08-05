@@ -2,18 +2,23 @@ brew = [
   "alacritty",
   "atuin",
   "awscli",
+  "caffeine",
   "firefox",
   "firefox@developer-edition",
   "fnm",
   "font-hack-nerd-font",
   "helix",
+  "jj",
   "jujutsu",
   "nushell",
   "pipx",
   "pyenv",
   "starship",
+  "tfenv",
   "topgrade",
   "zellij",
+  "zed",
+  "zoom",
 
   # lsps
   "bash-language-server",
@@ -21,6 +26,9 @@ brew = [
   "taplo",
   "typescript-language-server",
   "yaml-language-server",
+
+  # libs
+  "libgit2",
 
   # personal
   "proton-pass",
