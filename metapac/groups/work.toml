@@ -7,6 +7,7 @@ brew = [
   "firefox@developer-edition",
   "fnm",
   "font-hack-nerd-font",
+  "gh",
   "helix",
   "jj",
   "jujutsu",

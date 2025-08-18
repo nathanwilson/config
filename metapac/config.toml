@@ -1,6 +1,6 @@
-arch_package_manager = "paru"
-
 hostname_groups_enabled = true
+
+enabled_backends = ["brew", "arch", "cargo", "pipx"]
 
 [hostname_groups]
 framework = ["framework-sys", "framework-app", "base", "dev", "games"]
